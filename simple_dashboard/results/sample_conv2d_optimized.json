@@ -1,0 +1,39 @@
+{
+  "run_id": "run_conv2d_optimized_001",
+  "timestamp": "2026-04-02T10:05:00Z",
+  "workload": "conv2d",
+  "category": "deep_learning",
+  "implementation": "optimized",
+  "input_label": "3x224x224 -> 16x222x222",
+  "hardware": {
+    "gpu_name": "RTX 5070",
+    "cuda_version": "12.9"
+  },
+  "parameters": {
+    "in_channels": 3,
+    "out_channels": 16,
+    "height": 224,
+    "width": 224,
+    "kernel_size": 3
+  },
+  "metrics": {
+    "avg_latency_ms": 1.726,
+    "p50_latency_ms": 1.714,
+    "p95_latency_ms": 1.801,
+    "throughput": 457088.076,
+    "speedup_vs_baseline": 1.646
+  },
+  "timed_run_latencies_ms": [
+    1.711,
+    1.714,
+    1.703,
+    1.734,
+    1.748,
+    1.722,
+    1.801,
+    1.749,
+    1.718,
+    1.660
+  ],
+  "notes": "Constant-memory filter path reduces effective latency for the selected convolution workload."
+}

@@ -1,0 +1,36 @@
+{
+  "run_id": "run_reduction_baseline_001",
+  "timestamp": "2026-04-02T09:40:00Z",
+  "workload": "reduction",
+  "category": "classical",
+  "implementation": "baseline",
+  "input_label": "1M elements, block 256",
+  "hardware": {
+    "gpu_name": "RTX 5070",
+    "cuda_version": "12.9"
+  },
+  "parameters": {
+    "num_elements": 1048576,
+    "block_size": 256
+  },
+  "metrics": {
+    "avg_latency_ms": 0.744,
+    "p50_latency_ms": 0.739,
+    "p95_latency_ms": 0.772,
+    "throughput": 1409376.344,
+    "speedup_vs_baseline": 1.0
+  },
+  "timed_run_latencies_ms": [
+    0.736,
+    0.741,
+    0.739,
+    0.750,
+    0.752,
+    0.737,
+    0.772,
+    0.746,
+    0.743,
+    0.724
+  ],
+  "notes": "Reference block-level reduction with higher synchronization cost."
+}

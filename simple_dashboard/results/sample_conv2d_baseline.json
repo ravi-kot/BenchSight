@@ -1,0 +1,39 @@
+{
+  "run_id": "run_conv2d_baseline_001",
+  "timestamp": "2026-04-02T10:00:00Z",
+  "workload": "conv2d",
+  "category": "deep_learning",
+  "implementation": "baseline",
+  "input_label": "3x224x224 -> 16x222x222",
+  "hardware": {
+    "gpu_name": "RTX 5070",
+    "cuda_version": "12.9"
+  },
+  "parameters": {
+    "in_channels": 3,
+    "out_channels": 16,
+    "height": 224,
+    "width": 224,
+    "kernel_size": 3
+  },
+  "metrics": {
+    "avg_latency_ms": 2.841,
+    "p50_latency_ms": 2.826,
+    "p95_latency_ms": 2.934,
+    "throughput": 277617.191,
+    "speedup_vs_baseline": 1.0
+  },
+  "timed_run_latencies_ms": [
+    2.812,
+    2.826,
+    2.817,
+    2.848,
+    2.864,
+    2.831,
+    2.934,
+    2.882,
+    2.845,
+    2.751
+  ],
+  "notes": "Direct convolution baseline with limited filter reuse."
+}

@@ -1,0 +1,35 @@
+{
+  "run_id": "run_vector_add_optimized_001",
+  "timestamp": "2026-04-02T09:35:00Z",
+  "workload": "vector_add",
+  "category": "classical",
+  "implementation": "optimized",
+  "input_label": "1M elements",
+  "hardware": {
+    "gpu_name": "RTX 5070",
+    "cuda_version": "12.9"
+  },
+  "parameters": {
+    "num_elements": 1048576
+  },
+  "metrics": {
+    "avg_latency_ms": 0.129,
+    "p50_latency_ms": 0.127,
+    "p95_latency_ms": 0.136,
+    "throughput": 8124031.008,
+    "speedup_vs_baseline": 1.426
+  },
+  "timed_run_latencies_ms": [
+    0.127,
+    0.129,
+    0.126,
+    0.130,
+    0.128,
+    0.132,
+    0.131,
+    0.125,
+    0.129,
+    0.133
+  ],
+  "notes": "Optimized grid-stride implementation."
+}

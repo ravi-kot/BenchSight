@@ -1,0 +1,36 @@
+{
+  "run_id": "run_softmax_baseline_001",
+  "timestamp": "2026-04-02T10:10:00Z",
+  "workload": "softmax",
+  "category": "deep_learning",
+  "implementation": "baseline",
+  "input_label": "1024 x 1024",
+  "hardware": {
+    "gpu_name": "RTX 5070",
+    "cuda_version": "12.9"
+  },
+  "parameters": {
+    "rows": 1024,
+    "cols": 1024
+  },
+  "metrics": {
+    "avg_latency_ms": 1.583,
+    "p50_latency_ms": 1.571,
+    "p95_latency_ms": 1.649,
+    "throughput": 662397.979,
+    "speedup_vs_baseline": 1.0
+  },
+  "timed_run_latencies_ms": [
+    1.566,
+    1.571,
+    1.562,
+    1.594,
+    1.603,
+    1.578,
+    1.649,
+    1.596,
+    1.581,
+    1.530
+  ],
+  "notes": "Row-wise baseline softmax path."
+}

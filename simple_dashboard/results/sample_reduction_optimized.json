@@ -1,0 +1,36 @@
+{
+  "run_id": "run_reduction_optimized_001",
+  "timestamp": "2026-04-02T09:45:00Z",
+  "workload": "reduction",
+  "category": "classical",
+  "implementation": "optimized",
+  "input_label": "1M elements, block 256",
+  "hardware": {
+    "gpu_name": "RTX 5070",
+    "cuda_version": "12.9"
+  },
+  "parameters": {
+    "num_elements": 1048576,
+    "block_size": 256
+  },
+  "metrics": {
+    "avg_latency_ms": 0.421,
+    "p50_latency_ms": 0.418,
+    "p95_latency_ms": 0.439,
+    "throughput": 2490679.335,
+    "speedup_vs_baseline": 1.767
+  },
+  "timed_run_latencies_ms": [
+    0.417,
+    0.419,
+    0.415,
+    0.422,
+    0.426,
+    0.418,
+    0.431,
+    0.439,
+    0.420,
+    0.403
+  ],
+  "notes": "Warp-aware reduction path with stronger speedup and tighter tail latency."
+}

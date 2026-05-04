@@ -1,0 +1,35 @@
+{
+  "run_id": "run_vector_add_baseline_001",
+  "timestamp": "2026-04-02T09:30:00Z",
+  "workload": "vector_add",
+  "category": "classical",
+  "implementation": "baseline",
+  "input_label": "1M elements",
+  "hardware": {
+    "gpu_name": "RTX 5070",
+    "cuda_version": "12.9"
+  },
+  "parameters": {
+    "num_elements": 1048576
+  },
+  "metrics": {
+    "avg_latency_ms": 0.184,
+    "p50_latency_ms": 0.181,
+    "p95_latency_ms": 0.193,
+    "throughput": 5695652.174,
+    "speedup_vs_baseline": 1.0
+  },
+  "timed_run_latencies_ms": [
+    0.181,
+    0.183,
+    0.179,
+    0.185,
+    0.188,
+    0.181,
+    0.190,
+    0.184,
+    0.187,
+    0.182
+  ],
+  "notes": "Baseline memory-bound sanity run."
+}

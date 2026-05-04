@@ -1,0 +1,38 @@
+{
+  "run_id": "run_gemm_cublas_001",
+  "timestamp": "2026-04-02T10:00:00Z",
+  "workload": "gemm",
+  "category": "classical",
+  "implementation": "cublas",
+  "input_label": "512 x 512 x 512",
+  "hardware": {
+    "gpu_name": "RTX 5070",
+    "cuda_version": "12.9"
+  },
+  "parameters": {
+    "m": 512,
+    "n": 512,
+    "k": 512,
+    "tile_size": 16
+  },
+  "metrics": {
+    "avg_latency_ms": 0.820,
+    "p50_latency_ms": 0.820,
+    "p95_latency_ms": 0.829,
+    "throughput": 327360312195.122,
+    "speedup_vs_baseline": 5.929
+  },
+  "timed_run_latencies_ms": [
+    0.817,
+    0.821,
+    0.819,
+    0.824,
+    0.829,
+    0.818,
+    0.822,
+    0.816,
+    0.820,
+    0.814
+  ],
+  "notes": "cuBLAS SGEMM reference path for comparing custom matrix multiplication against a vendor library."
+}

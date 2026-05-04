@@ -1,0 +1,38 @@
+{
+  "run_id": "run_gemm_optimized_001",
+  "timestamp": "2026-04-02T09:55:00Z",
+  "workload": "gemm",
+  "category": "classical",
+  "implementation": "optimized",
+  "input_label": "512 x 512 x 512",
+  "hardware": {
+    "gpu_name": "RTX 5070",
+    "cuda_version": "12.9"
+  },
+  "parameters": {
+    "m": 512,
+    "n": 512,
+    "k": 512,
+    "tile_size": 16
+  },
+  "metrics": {
+    "avg_latency_ms": 2.713,
+    "p50_latency_ms": 2.701,
+    "p95_latency_ms": 2.812,
+    "throughput": 98944141540.730,
+    "speedup_vs_baseline": 1.792
+  },
+  "timed_run_latencies_ms": [
+    2.699,
+    2.701,
+    2.695,
+    2.723,
+    2.740,
+    2.707,
+    2.812,
+    2.733,
+    2.706,
+    2.614
+  ],
+  "notes": "Tiled shared-memory GEMM with stronger compute utilization."
+}

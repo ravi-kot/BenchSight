@@ -1,0 +1,12 @@
+{
+  "job_id": "profile_reduction_cublas",
+  "workload": "reduction",
+  "implementation": "cublas",
+  "warmup_runs": 10,
+  "timed_runs": 50,
+  "parameters": {
+    "num_elements": 1048576,
+    "block_size": 256
+  },
+  "artifacts_dir": "C:/Users/Admin/Workspace/BenchSight/profiling/outputs/reduction_cublas"
+}

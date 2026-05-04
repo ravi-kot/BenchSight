@@ -1,0 +1,36 @@
+{
+  "run_id": "run_softmax_cudnn_001",
+  "timestamp": "2026-04-02T10:17:00Z",
+  "workload": "softmax",
+  "category": "deep_learning",
+  "implementation": "cudnn",
+  "input_label": "1024 x 1024",
+  "hardware": {
+    "gpu_name": "RTX 5070",
+    "cuda_version": "12.9"
+  },
+  "parameters": {
+    "rows": 1024,
+    "cols": 1024
+  },
+  "metrics": {
+    "avg_latency_ms": 0.604,
+    "p50_latency_ms": 0.599,
+    "p95_latency_ms": 0.631,
+    "throughput": 1736052.980,
+    "speedup_vs_baseline": 2.621
+  },
+  "timed_run_latencies_ms": [
+    0.596,
+    0.599,
+    0.594,
+    0.607,
+    0.612,
+    0.601,
+    0.631,
+    0.613,
+    0.604,
+    0.580
+  ],
+  "notes": "cuDNN SoftmaxForward reference path for row-wise softmax."
+}

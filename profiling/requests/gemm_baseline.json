@@ -1,0 +1,14 @@
+{
+  "job_id": "profile_gemm_baseline",
+  "workload": "gemm",
+  "implementation": "baseline",
+  "warmup_runs": 10,
+  "timed_runs": 50,
+  "parameters": {
+    "m": 512,
+    "n": 512,
+    "k": 512,
+    "tile_size": 16
+  },
+  "artifacts_dir": "C:/Users/Admin/Workspace/BenchSight/profiling/outputs/gemm_baseline"
+}

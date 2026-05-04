@@ -1,0 +1,15 @@
+{
+  "job_id": "profile_conv2d_cublas",
+  "workload": "conv2d",
+  "implementation": "cublas",
+  "warmup_runs": 10,
+  "timed_runs": 50,
+  "parameters": {
+    "in_channels": 3,
+    "out_channels": 16,
+    "height": 224,
+    "width": 224,
+    "kernel_size": 3
+  },
+  "artifacts_dir": "C:/Users/Admin/Workspace/BenchSight/profiling/outputs/conv2d_cublas"
+}

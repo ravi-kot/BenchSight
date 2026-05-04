@@ -1,0 +1,38 @@
+{
+  "run_id": "run_gemm_baseline_001",
+  "timestamp": "2026-04-02T09:50:00Z",
+  "workload": "gemm",
+  "category": "classical",
+  "implementation": "baseline",
+  "input_label": "512 x 512 x 512",
+  "hardware": {
+    "gpu_name": "RTX 5070",
+    "cuda_version": "12.9"
+  },
+  "parameters": {
+    "m": 512,
+    "n": 512,
+    "k": 512,
+    "tile_size": 16
+  },
+  "metrics": {
+    "avg_latency_ms": 4.862,
+    "p50_latency_ms": 4.847,
+    "p95_latency_ms": 4.991,
+    "throughput": 55210912381.736,
+    "speedup_vs_baseline": 1.0
+  },
+  "timed_run_latencies_ms": [
+    4.844,
+    4.852,
+    4.838,
+    4.875,
+    4.901,
+    4.847,
+    4.991,
+    4.886,
+    4.858,
+    4.728
+  ],
+  "notes": "Naive GEMM baseline for compute-heavy comparison."
+}

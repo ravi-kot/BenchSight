@@ -1,0 +1,12 @@
+{
+  "job_id": "profile_softmax_cudnn",
+  "workload": "softmax",
+  "implementation": "cudnn",
+  "warmup_runs": 10,
+  "timed_runs": 50,
+  "parameters": {
+    "rows": 1024,
+    "cols": 1024
+  },
+  "artifacts_dir": "C:/Users/Admin/Workspace/BenchSight/profiling/outputs/softmax_cudnn"
+}

@@ -1,0 +1,36 @@
+{
+  "run_id": "run_reduction_cublas_001",
+  "timestamp": "2026-04-02T09:47:00Z",
+  "workload": "reduction",
+  "category": "classical",
+  "implementation": "cublas",
+  "input_label": "1M elements, block 256",
+  "hardware": {
+    "gpu_name": "RTX 5070",
+    "cuda_version": "12.9"
+  },
+  "parameters": {
+    "num_elements": 1048576,
+    "block_size": 256
+  },
+  "metrics": {
+    "avg_latency_ms": 0.358,
+    "p50_latency_ms": 0.355,
+    "p95_latency_ms": 0.374,
+    "throughput": 2928983.240,
+    "speedup_vs_baseline": 2.078
+  },
+  "timed_run_latencies_ms": [
+    0.354,
+    0.356,
+    0.352,
+    0.359,
+    0.363,
+    0.355,
+    0.374,
+    0.361,
+    0.357,
+    0.346
+  ],
+  "notes": "cuBLAS Sasum reference path; inputs are positive so absolute-sum matches the reduction sum."
+}
